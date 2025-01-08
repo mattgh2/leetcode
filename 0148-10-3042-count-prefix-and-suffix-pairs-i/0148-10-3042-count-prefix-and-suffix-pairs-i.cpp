@@ -8,7 +8,7 @@ public:
                 if (words[i].size() > words[j].size())
                     continue;
                 std::string current_word = words[i];
-                int pp = words[j].size() - 1 - words[i].size() + 1;
+                int pp = words[j].size() - words[i].size() ;
                 if (words[j].substr(0, current_word.size()) == current_word &&
                     words[j].substr(pp) == current_word) {
                         ++ans;
