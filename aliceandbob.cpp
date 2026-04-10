@@ -27,7 +27,6 @@ public:
         for (int i = 2; i <= N; ++i) {
             lg[i] = lg[i/2] + 1;
         }
-
         for (int p = 1; p <= P; ++p) {
             long l{}, r{};
             for (int i = 0; i + (1 << p) <= N; ++i) {
@@ -85,6 +84,7 @@ public:
             else ans[k++] = best.second;
 
 
+
         }
 
         return ans;
@@ -98,6 +98,7 @@ int main(int argc, char **argv){
 
     std::vector<int> heights = {1,2,1,2,1,2};
     std::vector<int> heights2 = {6,4,8,5,2,7};
+
     std::vector<std::vector<int>> queries = {{0,2}};
     Solution solution;
 

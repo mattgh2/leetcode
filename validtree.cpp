@@ -18,6 +18,7 @@ public:
             if (visit[u] == unvisited)
                 if (dfs(count,u,visit,adj, s)) {
                     return true;
+
                 }
         }
         count++;
